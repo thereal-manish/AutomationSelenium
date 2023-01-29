@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CashDry Test Suite">
+	<listeners>
+	<listener class-name="testcomponents.Listeners"/>
+	</listeners>
+	<test name="Test">
+		<parameter name="username" value="admin"/>
+		<parameter name="password" value="Adminpass@123"/>
+		<parameter name="managerId" value="01"/>
+		<parameter name="managerName" value="DhineshLingam"/>
+		<parameter name="managerEmail" value="manager@cashdry.com"/>
+		<parameter name="managerAddress" value="Thiruchendur"/>
+		<parameter name="managerNumber" value="9876543210"/>
+		<parameter name="managerPassword" value="Password@123"/>
+		<parameter name="updatedNameManager" value="Updated Name"/>
+
+
+
+		<classes>
+			<!-- <class name="tests.HomePageTests" /> -->
+			<!-- <class name="tests.LoginPageTest" /> -->
+			<class name="tests.ManagerAddPageTest" />
+			<class name="tests.ManagerUpdatePageTest" />
+			<class name="tests.ManagerDeletePageTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
